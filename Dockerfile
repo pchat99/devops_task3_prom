@@ -8,5 +8,4 @@ RUN tar -xzf prometheus-2.19.0.linux-amd64.tar.gz
 RUN mkdir -p /metrics
 CMD ["./prometheus-2.19.0.linux-amd64/prometheus"]
 CMD ["--config.file=/prometheus-2.19.0.linux-amd64/prometheus.yml"]
-CMD ["--storage.tsdb.path=/metrics"]
 
